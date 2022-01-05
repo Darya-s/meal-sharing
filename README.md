@@ -15,7 +15,7 @@
 ---
 
 <p align="center"> Website api for sharing meals together. Invite your best friends or your family for dinner!
-    <br> 
+    <br>
 </p>
 
 ## 📝 Table of Contents
@@ -32,7 +32,7 @@
 
 ## 🧐 About <a name = "about"></a>
 
-Link to deployed website: 
+Link to deployed website:
 
 This project will be built out over 3 different classes:
 
@@ -42,11 +42,9 @@ This project will be built out over 3 different classes:
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
-
 ## Deployment <a name = "deployment"></a>
 
 Check here how to depoly an app on Heroku https://github.com/HackYourFuture-CPH/node.js/blob/master/deployment.md and watch this video https://www.youtube.com/watch?v=A9ZcSOc7hCw
-
 
 ### Environment variables
 
@@ -61,11 +59,11 @@ Remember to copy the `.env.example` file, and rename the copied file to `.env`. 
 
 ### Installing
 
-To install run `npm install`
+To install run `yarn install`
 
 ## 🎈 Usage <a name="usage"></a>
 
-To run `npm run dev`
+To run `yarn dev`
 
 The api can now be found on `http://localhost:3000/api/` an example is `http://localhost:3000/api/meals`
 
