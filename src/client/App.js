@@ -1,22 +1,21 @@
-import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import TestComponent from "./components/TestComponent/TestComponent";
 
-import Home from './routes/Home'
-import MealsDetail from './routes/MealsDetail'
-import MealsList from './routes/MealsList'
-import NotFound from './routes/NotFound'
-
-const App = () => {
-	return (
-		<BrowserRouter>
-			<Routes>
-				<Route path='/' element={<Home />} />
-				<Route path='/meals' element={<MealsList />} />
-				<Route path='/meals/:id' element={<MealsDetail />} />
-				<Route path='*' element={<NotFound />} />
-			</Routes>
-		</BrowserRouter>
-	)
+function App() {
+  return (
+    <Router>
+      <Route exact path="/">
+        <p>Meal</p>
+      </Route>
+      <Route exact path="/lol">
+        <p>Sharing</p>
+      </Route>
+      <Route exact path="/test-component">
+        <TestComponent></TestComponent>
+      </Route>
+    </Router>
+  );
 }
 
-export default App
+export default App;
