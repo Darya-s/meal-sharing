@@ -4,10 +4,10 @@
 	"description": "Website for sharing meals",
 	"scripts": {
 		"build": "webpack --mode production",
-		"start": "yarn build && node ./src/backend/server",
+		"start": "npm run build && node ./src/backend/server",
 		"client": "webpack-dev-server --mode development --devtool inline-source-map --hot",
 		"server": "nodemon ./src/backend/server",
-		"dev": "concurrently \"yarn server\" \"yarn client\""
+		"dev": "concurrently \"npm run server\" \"npm run client\""
 	},
 	"author": "Benjamin Hughes",
 	"license": "MIT",
@@ -38,9 +38,9 @@
 		"multer": "^1.3.0",
 		"mysql2": "^2.1.0",
 		"path": "^0.12.7",
-		"react": "^17.0.2",
-		"react-dom": "^17.0.2",
-		"react-router-dom": "^6.1.1",
+		"react": "^16.8.2",
+		"react-dom": "^16.8.2",
+		"react-router-dom": "^5.0.1",
 		"sass": "^1.27.1",
 		"sass-loader": "^10.0.4",
 		"serve-favicon": "2.4.5",
